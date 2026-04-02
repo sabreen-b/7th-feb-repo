@@ -10,7 +10,7 @@ test('Handle Alert Dialog', async ({page})=>{
         console.log("Alert Message :"+message);
         expect(message).toContain("I am a JS Alert")
         await alertWindow.accept()
-        
+           
     })
     await page.locator(':text-is("Click for JS Alert")').click()
 
